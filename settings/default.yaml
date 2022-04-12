@@ -1,0 +1,24 @@
+# Input/Output/Name
+train_data_path: "../data/train"
+val_data_path: "../data/valid"
+output_path: "outputs"
+model_path: "checkpoints"
+load_chkpt: null # continue training
+name: "test"
+
+# Training parameters
+epochs: 10
+batch_size: 2
+
+# Optimizer configurations
+optimizer: "Adam"
+lr: 2e-5
+scheduler: ""
+scheduler_interval: "epoch"  # or "step"
+scheduler_param:
+  first_cycle_steps: 20  # epoch
+  cycle_mult: 2
+  max_lr: 0.003
+  min_lr: 0.0000001
+  warmup_steps: 1
+  gamma: 0.5

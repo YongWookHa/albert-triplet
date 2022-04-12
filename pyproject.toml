@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "patent-sberta-triplet"
+version = "0.1.0"
+description = "train patent-sberta model with triplet data"
+authors = ["YongWook Ha <ywha12@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+pip = "^22.0.4"
+transformers = "^4.18.0"
+torch = "^1.11.0"
+pytorch-lightning = "^1.6.0"
+sentencepiece = "^0.1.96"
+addict = "^2.4.0"
+
+[tool.poetry.dev-dependencies]
+scikit-learn = "^1.0.2"
+shutils = "^0.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
